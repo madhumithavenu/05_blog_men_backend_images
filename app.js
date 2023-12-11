@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-// const blogRouter = require("./routes/blog-routes.js");
+const blogRouter = require("./routes/blog-routes.js");
 const userRouter = require("./routes/user-routes.js");
 const cors = require('cors');
 const app = express();
@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/api/user", userRouter);
-// app.use("/api/blog",blogRouter);
+app.use("/api/blog",blogRouter);
 
 mongoose
     .connect(
