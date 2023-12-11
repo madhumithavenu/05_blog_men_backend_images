@@ -9,6 +9,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/user", userRouter);
 app.use("/api/blog",blogRouter);
+
 mongoose
     .connect(
         "mongodb+srv://madhumithavenu03:madhu@cluster0.kfmiwbq.mongodb.net/Blog?retryWrites=true&w=majority"
