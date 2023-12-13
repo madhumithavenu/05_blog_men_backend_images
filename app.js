@@ -15,7 +15,7 @@ app.use("/api/blog",blogRouter);
 
 mongoose
     .connect(
-        "mongodb+srv://madhumithavenu03:madhu@cluster0.kfmiwbq.mongodb.net/Blog?retryWrites=true&w=majority"
+        "mongodb+srv://madhumithavenu03:madhu@cluster0.kfmiwbq.mongodb.net/UserBlog?retryWrites=true&w=majority"
     )
     .then(() => app.listen(5000))
     .then(() =>
